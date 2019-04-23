@@ -10,6 +10,14 @@ namespace HalloweenSale
             Console.WriteLine("20 3 6 80");
             int x = howManyGames(20, 3, 6, 80);
             Console.WriteLine($"{x}");
+
+            //Console.WriteLine("16 2 1 9981");
+            //int x = howManyGames(16, 2, 1, 9981);
+            //Console.WriteLine($"{x}");
+
+            //Console.WriteLine("100 1 1 99");
+            //int x = howManyGames(100, 1, 1, 99);
+            //Console.WriteLine($"{x}");
         }
 
         static int howManyGames(int p, int d, int m, int s)
@@ -18,7 +26,7 @@ namespace HalloweenSale
             int newp = p;
             int rnum = 0;
 
-            while(t > m)
+            while(t >= newp)
             {
                 if(newp == m)
                 {
